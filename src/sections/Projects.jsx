@@ -8,7 +8,7 @@ const projects = [
     description:
       'A MERN stack platform that helps students search for jobs and internships with secure authentication and dynamic listings.',
     technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Tailwind CSS'],
-    github: 'https://github.com/Ritik-rajput',
+    github: 'https://github.com/Ritik-rajput786/internfinder',
     demo: 'https://github.com/Ritik-rajput',
     image: '/jobfinder.png',
   },
@@ -17,7 +17,7 @@ const projects = [
     description:
       'A responsive Spotify-inspired music player with play, pause, skip, and volume controls built using HTML, CSS, and JavaScript.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/Ritik-rajput',
+    github: 'https://github.com/Ritik-rajput786/spotifyclone',
     demo: 'https://github.com/Ritik-rajput',
     image: '/spotify.webp',
   },
@@ -26,7 +26,7 @@ const projects = [
     description:
       'A hotel management system that handles room bookings, customer records, and staff management with MySQL database integration.',
     technologies: ['JavaScript', 'Tailwind CSS', 'PHP', 'MySQL (XAMPP)'],
-    github: 'https://github.com/Ritik-rajput',
+    github: 'https://github.com/Ritik-rajput786/Hotel_management_system',
     demo: 'https://github.com/Ritik-rajput',
     image: '/Hotel_res.png',
   },
@@ -115,7 +115,7 @@ function Projects() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg border border-indigo-400/70 px-4 py-2 font-semibold text-indigo-200 transition hover:scale-[1.02] hover:bg-indigo-500/20"
                 >
-                  <FaExternalLinkAlt /> Live Demo
+                  {/* <FaExternalLinkAlt /> Live Demo */}
                 </a>
               </div>
             </div>
