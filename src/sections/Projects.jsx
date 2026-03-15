@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaCss3Alt, FaExternalLinkAlt, FaGithub, FaHtml5, FaJsSquare, FaNodeJs, FaReact } from 'react-icons/fa'
+import { FaCss3Alt, FaGithub, FaHtml5, FaJsSquare, FaNodeJs, FaReact } from 'react-icons/fa'
 import { SiExpress, SiMongodb, SiMysql, SiPhp, SiTailwindcss } from 'react-icons/si'
 
 const projects = [
@@ -9,7 +9,6 @@ const projects = [
       'A MERN stack platform that helps students search for jobs and internships with secure authentication and dynamic listings.',
     technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Tailwind CSS'],
     github: 'https://github.com/Ritik-rajput786/internfinder',
-    demo: 'https://github.com/Ritik-rajput',
     image: '/jobfinder.png',
   },
   {
@@ -18,17 +17,23 @@ const projects = [
       'A responsive Spotify-inspired music player with play, pause, skip, and volume controls built using HTML, CSS, and JavaScript.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/Ritik-rajput786/spotifyclone',
-    demo: 'https://github.com/Ritik-rajput',
     image: '/spotify.webp',
   },
   {
-    title: 'Hotel Reservation System',
+    title: 'Hotel Management System',
     description:
       'A hotel management system that handles room bookings, customer records, and staff management with MySQL database integration.',
     technologies: ['JavaScript', 'Tailwind CSS', 'PHP', 'MySQL (XAMPP)'],
     github: 'https://github.com/Ritik-rajput786/Hotel_management_system',
-    demo: 'https://github.com/Ritik-rajput',
     image: '/Hotel_res.png',
+  },
+  {
+    title: 'Student Management System',
+    description:
+      'A student management system developed using Data Structures and Algorithms concepts to add, update, search, and delete student records efficiently.',
+    technologies: ['C++', 'DSA'],
+    github: 'https://github.com/Ritik-rajput786/Student_management_using_DSA',
+    image: '/student.jpeg',
   },
 ]
 
@@ -87,7 +92,16 @@ function Projects() {
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.technologies.map((tech) => {
                   const techData = techIconMap[tech]
-                  if (!techData) return null
+                  if (!techData) {
+                    return (
+                      <span
+                        key={`${project.title}-${tech}-text`}
+                        className="inline-flex items-center gap-1.5 rounded-full border border-slate-600/70 bg-slate-900/70 px-2.5 py-1 text-xs text-slate-200"
+                      >
+                        {tech}
+                      </span>
+                    )
+                  }
                   const Icon = techData.icon
                   return (
                     <span
@@ -107,15 +121,7 @@ function Projects() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg bg-slate-800 px-4 py-2 font-semibold text-slate-100 transition hover:scale-[1.02] hover:bg-slate-700"
                 >
-                  <FaGithub /> GitHub
-                </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-indigo-400/70 px-4 py-2 font-semibold text-indigo-200 transition hover:scale-[1.02] hover:bg-indigo-500/20"
-                >
-                  {/* <FaExternalLinkAlt /> Live Demo */}
+                  <FaGithub /> View Code
                 </a>
               </div>
             </div>

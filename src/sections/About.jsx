@@ -11,7 +11,7 @@ import {
 import { SiExpress, SiJavascript, SiMongodb, SiTailwindcss } from 'react-icons/si'
 
 const stats = [
-  { label: 'Projects Built', value: '12+', icon: FaLaptopCode },
+  { label: 'Projects Built', value: '6+', icon: FaLaptopCode },
   { label: 'Technologies Learned', value: '10+', icon: FaCode },
   { label: 'Certifications', value: '4', icon: FaCertificate },
   { label: 'DSA Problems Solved', value: '200+', icon: FaAward },

@@ -4,13 +4,22 @@ import {
   FaGitAlt,
   FaGithub,
   FaHtml5,
+  FaJava,
   FaJsSquare,
   FaNodeJs,
   FaReact,
 } from 'react-icons/fa'
-import { SiExpress, SiMongodb, SiTailwindcss } from 'react-icons/si'
+import { SiC, SiCplusplus, SiExpress, SiMongodb, SiMysql, SiTailwindcss } from 'react-icons/si'
 
 const skillCategories = [
+  {
+    category: 'Programming Languages',
+    skills: [
+      { name: 'C', icon: SiC, tone: 'text-blue-200', level: 85 },
+      { name: 'C++', icon: SiCplusplus, tone: 'text-indigo-200', level: 88 },
+      { name: 'Java', icon: FaJava, tone: 'text-orange-300', level: 80 },
+    ],
+  },
   {
     category: 'Frontend',
     skills: [
@@ -30,7 +39,10 @@ const skillCategories = [
   },
   {
     category: 'Database',
-    skills: [{ name: 'MongoDB', icon: SiMongodb, tone: 'text-emerald-300', level: 78 }],
+    skills: [
+      { name: 'MongoDB', icon: SiMongodb, tone: 'text-emerald-300', level: 78 },
+      { name: 'MySQL', icon: SiMysql, tone: 'text-sky-300', level: 82 },
+    ],
   },
   {
     category: 'Tools',
@@ -57,7 +69,8 @@ function Skills() {
           Technical Skills
         </h2>
         <p className="section-subtitle">
-          My key technical strengths across frontend, backend, databases, and tools.
+          My key technical strengths across programming languages, frontend, backend,
+          databases, and tools.
         </p>
       </header>
 
