@@ -56,10 +56,12 @@ const skillCategories = [
 function Skills() {
   return (
     <motion.section
+      id="skills"
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5 }}
-      className="relative space-y-8 overflow-hidden py-2"
+      className="relative snap-start scroll-mt-28 space-y-8 overflow-hidden py-2"
     >
       <div className="pointer-events-none absolute -left-16 top-12 h-44 w-44 rounded-full bg-cyan-500/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-14 bottom-14 h-48 w-48 rounded-full bg-purple-500/20 blur-3xl" />

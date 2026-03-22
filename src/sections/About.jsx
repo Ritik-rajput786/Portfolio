@@ -36,7 +36,7 @@ const certifications = [
 
 function About() {
   return (
-    <section className="relative space-y-10 overflow-hidden py-2">
+    <section id="about" className="relative snap-start scroll-mt-28 space-y-10 overflow-hidden py-2">
       <div className="pointer-events-none absolute -left-16 top-12 h-48 w-48 rounded-full bg-cyan-500/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-16 top-40 h-52 w-52 rounded-full bg-purple-500/20 blur-3xl" />
 

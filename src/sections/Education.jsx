@@ -28,10 +28,12 @@ const educationItems = [
 function Education() {
   return (
     <motion.section
+      id="education"
       initial={{ opacity: 0, y: 18 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.45 }}
-      className="space-y-8 py-2"
+      className="snap-start scroll-mt-28 space-y-8 py-2"
     >
       <header>
         <h2 className="section-title">Education</h2>

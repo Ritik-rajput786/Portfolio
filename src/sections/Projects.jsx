@@ -53,10 +53,12 @@ const techIconMap = {
 function Projects() {
   return (
     <motion.section
+      id="projects"
       initial={{ opacity: 0, y: 18 }}
-      animate={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.45 }}
-      className="space-y-8 py-2"
+      className="snap-start scroll-mt-28 space-y-8 py-2"
     >
       <header>
         <h2 className="font-display bg-gradient-to-r from-cyan-300 via-indigo-300 to-purple-300 bg-clip-text text-4xl font-extrabold text-transparent sm:text-5xl">

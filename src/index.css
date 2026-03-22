@@ -51,3 +51,60 @@ body {
     radial-gradient(circle at 90% 12%, rgb(168 85 247 / 0.2), transparent 28%),
     radial-gradient(circle at 60% 84%, rgb(14 165 233 / 0.14), transparent 25%);
 }
+
+@keyframes orb-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -22px, 0);
+  }
+}
+
+.orb-float-slow {
+  animation: orb-drift 12s ease-in-out infinite;
+}
+
+.orb-float-delayed {
+  animation: orb-drift 15s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+@media (pointer: fine) and (hover: hover) {
+  body.custom-cursor-enabled,
+  body.custom-cursor-enabled * {
+    cursor: none !important;
+  }
+}
+
+.custom-cursor-particle {
+  position: fixed;
+  z-index: 95;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0.85;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background: linear-gradient(135deg, rgb(34 211 238 / 0.95), rgb(244 114 182 / 0.8));
+  box-shadow: 0 0 10px rgb(34 211 238 / 0.8);
+  transition: transform 300ms ease-out, opacity 300ms ease-out;
+}
+
+.custom-cursor-ripple {
+  position: fixed;
+  z-index: 96;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0.9;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  border: 2px solid rgb(34 211 238 / 0.92);
+  box-shadow: 0 0 22px rgb(34 211 238 / 0.75), 0 0 14px rgb(244 114 182 / 0.55);
+  transition: transform 360ms ease-out, opacity 360ms ease-out;
+}

@@ -2,7 +2,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const socialLinks = [
   { href: 'https://github.com/Ritik-rajput', label: 'GitHub', icon: FaGithub },
-  { href: 'https://www.linkedin.com/in/ritik-rajput', label: 'LinkedIn', icon: FaLinkedin },
+  { href: 'https://www.linkedin.com/in/ritik-rajput-2b19b9223/', label: 'LinkedIn', icon: FaLinkedin },
   { href: 'mailto:ritikrajput1701@gmail.com', label: 'Email', icon: FaEnvelope },
 ]
 
