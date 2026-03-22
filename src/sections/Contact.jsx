@@ -37,13 +37,13 @@ function Contact() {
   const socialLinks = [
     {
       label: 'GitHub',
-      href: 'https://github.com/Ritik-rajput',
+      href: 'https://github.com/Ritik-rajput786',
       icon: FaGithub,
       tone: 'hover:text-slate-100',
     },
     {
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/ritik-rajput',
+      href: 'https://www.linkedin.com/in/ritik-rajput-2b19b9223/',
       icon: FaLinkedin,
       tone: 'hover:text-cyan-200',
     },
