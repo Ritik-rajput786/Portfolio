@@ -7,7 +7,7 @@ const educationItems = [
     degree: 'Bachelor of Technology – Computer Science and Engineering',
     institution: 'Lovely Professional University',
     location: 'Phagwara, Punjab',
-    performance: 'CGPA: 8.26',
+    performance: 'CGPA: 8.41',
   },
   {
     timelineLabel: 'Intermediate – 2021',
